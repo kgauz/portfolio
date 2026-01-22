@@ -822,7 +822,7 @@ mobile */
 .menu-icon{
     align-self: flex-start;
     display:flex;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 14px;
     font-size: 20px;
     color: #fff;
@@ -831,7 +831,7 @@ mobile */
 .closeMenu{
     align-self: flex-start;
     display:none;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top:7px;
     font-size: 30px;
     color: #fff;
