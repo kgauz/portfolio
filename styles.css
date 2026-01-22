@@ -767,33 +767,60 @@ mobile */
 @media screen and (max-width: 629px) {
   header {
     flex-direction: column;
+     position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  background-color: #000;
+  padding-bottom: 20px;
+
   }
+  
 
   nav ul {
     flex-direction: column;
-    margin-left: -300px;
+    
   }
+  #home {
+  padding-top: 70px;
+}
+
 
 .navLinks{
-  position:absolute;       
-  top: 30px;
+    align-self: flex-start;
+  position:fixed;       
+  top: 48px;
   left:0;          
    transform: translateX(-100%); 
-  z-index: 9999;
+  z-index:1000;
   background-color: #111010;
-  width: 380px;
-   height: calc(100vh - 30px);      
+  width: 380px;    
   height: 100vh;
   padding: 15px;
   transition: left 0.3s ease;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  
 }
   .logo {
     font-size: 20px;
+    margin-top: 20px;
+  }
+
+  nav ul li{
+    display: flex;
+    align-self: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin-left: -20px;
+    
   }
 
 
 .menu-icon{
+    align-self: flex-start;
     display:flex;
     margin-left: 30px;
     margin-top: 14px;
@@ -802,6 +829,7 @@ mobile */
     position: absolute;
 }
 .closeMenu{
+    align-self: flex-start;
     display:none;
     margin-left: 30px;
     margin-top:7px;
@@ -844,7 +872,7 @@ h2{
 .intro-home p{
     margin-top: 20px;
     font-size: 20px;
-    width:380px;
+    width:320px;
 }
 
 
