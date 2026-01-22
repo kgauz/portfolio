@@ -311,43 +311,73 @@
     </section>
 
     <script>
+/* ---------- ABOUT TABS ---------- */
+function showTab(tabName, element) {
+  document.querySelectorAll('.tab-con > div').forEach(tab => {
+    tab.classList.remove('active-tab');
+  });
 
-        function showTab(tabName, element) {
-            // Hide all content
-            document.querySelectorAll('.tab-con > div').forEach(function(tab) {
-                tab.classList.remove('active-tab');
-            });
+  document.querySelectorAll('.tab-links').forEach(link => {
+    link.classList.remove('active-links');
+  });
 
-            // Remove active-links from all tab links
-            document.querySelectorAll('.tab-links').forEach(function(link) {
-                link.classList.remove('active-links');
-            });
+  document.querySelector('.' + tabName).classList.add('active-tab');
+  element.classList.add('active-links');
+}
 
-            // Show selected tab content and highlight active tab link
-            document.querySelector('.' + tabName).classList.add('active-tab');
-            element.classList.add('active-links');
-        }
-        document.addEventListener("DOMContentLoaded", () => {
+/* ---------- NAV MENU ---------- */
+document.addEventListener("DOMContentLoaded", () => {
 
-  const navi = document.querySelectorAll(".navLinks ul li a");
+  const burger = document.getElementById("burger");
+  const closeBtn = document.getElementById("closePage");
+  const navLinks = document.querySelector(".navLinks");
+  const navItems = document.querySelectorAll(".navLinks ul li a");
 
-  navi.forEach(link => {
+  /* OPEN MENU */
+  burger.addEventListener("click", () => {
+    navLinks.classList.add("active");
+    burger.style.display ="none"
+    closeBtn.style.display ="flex";
+
+  });
+
+  /* CLOSE MENU */
+  closeBtn.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    closeBtn.style.display ="none";
+    burger.style.display ="flex";
+  });
+
+  /* CLOSE MENU WHEN LINK CLICKED */
+  navItems.forEach(link => {
     link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
 
-      // remove active from all
-      navi.forEach(nav => nav.classList.remove("active"));
-
-      // add active to clicked link
+      navItems.forEach(nav => nav.classList.remove("active"));
       link.classList.add("active");
-
     });
   });
 
+  /* CLICK OUTSIDE CLOSE */
+  document.addEventListener("click", (e) => {
+    if (
+      !navLinks.contains(e.target) &&
+      !burger.contains(e.target)
+    ) {
+      navLinks.classList.remove("active");
+    }
+  });
+
+  /* ESC KEY CLOSE */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      navLinks.classList.remove("active");
+    }
+  });
+
 });
+</script>
 
-
-
-    </script>
 
     </body>
 </html>
