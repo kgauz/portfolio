@@ -610,7 +610,7 @@ h3{
 }
 .inputs textarea {
     grid-column: span 2;
-    width: 100%;
+    width: 98%;
     height: 200px;
     padding: 20px;
     overflow: hidden;
