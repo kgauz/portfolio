@@ -353,6 +353,13 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.style.display ="flex";
   });
 
+      /* new change */
+  navLinks.addEventListener("click", () =>{
+     closeBtn.style.display ="none";
+       burger.style.display ="flex";
+
+  });
+
   /* CLOSE MENU WHEN LINK CLICKED */
   navItems.forEach(link => {
     link.addEventListener("click", () => {
