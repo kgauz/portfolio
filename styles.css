@@ -788,6 +788,10 @@ mobile */
   }
   
 
+  .services{
+    overflow: hidden;
+  }
+
   nav ul {
     flex-direction: column;
     
