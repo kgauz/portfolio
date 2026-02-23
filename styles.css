@@ -10,7 +10,9 @@ html {
 .menu-icon{
     display: none;
 }
-
+body{
+    overflow: auto;
+}
 header{
     display:flex;
     align-items: center;
@@ -477,9 +479,10 @@ h3{
 
 
 .work-img{
-    width:250px;
-    height: 400px;
+    width:100%;
+    height: 100%;
     border-radius: 20px;
+    object-fit:fill;
     transition: transfrom 0.5s;
 }
 
@@ -786,8 +789,7 @@ mobile */
   padding-bottom: 20px;
 
   }
-  
-
+ 
   .services{
     overflow: hidden;
   }
@@ -953,7 +955,7 @@ h2{
 
 .services-row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     color: #fff;
     align-items: center;
