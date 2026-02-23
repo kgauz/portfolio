@@ -3,6 +3,7 @@
         <title>My Portfolio</title>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My website </title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -49,7 +50,7 @@
                 <br>
             </div>
              <div class="pos">
-            <a class="shine btn2" href="KgaugeloMatshela-CV.pdf">Download CV</a>
+            <a class="shine btn2" href="Kgaugelo_Matshela_CV.pdf">Download CV</a>
             </div> 
 
         </section>
@@ -229,29 +230,14 @@
                 </div>
             </div>
 
-
-
-         <div class="work-item">
+               <div class="work-item">
             <div class="image-container">
-            <img class ="work-img" src="gym.png" alt="property-image">
+            <img class ="work-img" src="movieApp.png" alt="login-system image">
             <div class="image-caption">
-           
-            <p>
-  A full-stack gym website designed to manage memberships, display training programs, and handle user inquiries, built using PHP, MySQL, JavaScript, HTML, and CSS.
-</p>
-
-             <a href="http://kronwned.iceiy.com/?i=1"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-            </div>
-             </div>
-         </div>
-
-         <div class="work-item">
-            <div class="image-container">
-            <img class ="work-img" src="loginSystem.png" alt="login-system image">
-            <div class="image-caption">
-            <p>A secure login system that authenticates users with input validation, password encryption, and session control.
+            <p>I built a full-stack movie streaming web app using React, Node.js, Express, 
+                MongoDB, and JavaScript. 
             </p>
-             <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+             <a href="https://drive.google.com/file/d/1GimReR8wKKgOjCb_PAztBqdnZlp-HiQo/view?usp=sharing" ><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
             </div>
                  <div class="btn1">
              <a class="btn btn2" href="#">See More</a>
@@ -260,6 +246,24 @@
          
             
          </div>
+
+
+
+         <div class="work-item">
+            <div class="image-container">
+            <img class ="work-img" src="gym.png" alt="property-image">
+            <div class="image-caption">
+           
+            <p>
+  A full-stack gym website designed to manage memberships, display training programs, and handle user inquiries, built using JavaScript, HTML, and CSS.
+</p>
+
+             <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+            </div>
+             </div>
+         </div>
+
+      
   
 
        
@@ -294,14 +298,14 @@
                     <div class="inputs">
                     <input type ="text"  name ="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name ="area" placeholder="Mobile Number" required>
-                    <input type="text" name ="area" placeholder="Email Subject" required>
-                     <textarea name="text" id="text"  placeholder="Message"></textarea>
+                    <input type="text" name ="number" placeholder="Mobile Number" required>
+                    <input type="text" name ="subject" placeholder="Email Subject" required>
+                    <textarea name="text" id="text"  placeholder="Message"></textarea>
                     </div>
                     <input class="btn" type="submit" name="submit" value="Send Message" required> 
                 </form>
                 <div class="contact-email">
-                    <p>Contact me: 0793779154 / 0601883797 <br>Email: kgaugelomatshela@gmail.com</p>
+                    <p>Contact me: 0648489792 / 0601883797 <br>Email: kgaugelomatshela@gmail.com</p>
                 </div>
             </div>
 
@@ -352,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.style.display ="flex";
   });
 
-      /* new change */
+  /* new change */
   navLinks.addEventListener("click", () =>{
      closeBtn.style.display ="none";
        burger.style.display ="flex";
@@ -368,6 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active");
     });
   });
+
 
   /* CLICK OUTSIDE CLOSE */
   document.addEventListener("click", (e) => {
