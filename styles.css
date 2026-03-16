@@ -935,21 +935,14 @@ h2{
 .font{
     margin-left: 0px;
 }
-/* 
-.services-row{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    align-items: center;
-    gap:40px;
-} */
+
 
 .services-row{
     flex-direction: column;
     gap:30px;
 }
 .services-row div{
+    width: 300px;
     max-width:350px;
     height: 100px;
     max-height:150px;
@@ -959,9 +952,6 @@ h2{
 .services-row p{
     font-size: 15px;
 }
-
-
-
 
 
 .portfolio-row {
@@ -982,8 +972,8 @@ h2{
 
 
 .image-container {
-    width: 200px;
-    height: 250px;
+    width: 280px;
+    height: 200px;
     font-size: 15px;
     
 }
